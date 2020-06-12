@@ -9,22 +9,14 @@ namespace Etapa1
         {
             var escuela = new Escuela("primaria Liceo colsag",2012,TiposEscuela.Secundaria, pais:"Colombia");
 
-            var arregloCursos = new Curso[3];
-            arregloCursos[0] =  new Curso()
-                                {
-                                Nombre="601"
-                                 };
-
-            var curso2 = new Curso(){
-                Nombre="701"
-            };
-            arregloCursos[1] = curso2;
-
-            arregloCursos[2] = new Curso{
-                                Nombre="802"
-                                };
             
-                        
+            Curso[] arregloCursos = {
+                new Curso(){Nombre="601"},
+                new Curso(){Nombre="701"},
+                new Curso(){Nombre="802"}
+            };
+             
+                      
             Console.WriteLine(escuela);
             System.Console.WriteLine("======================");
             imprimirCursos(arregloCursos);
