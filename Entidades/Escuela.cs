@@ -11,6 +11,8 @@ namespace CorEscuela.Entidades
 
         public string pais { get; set; }
 
+        public string direccion;
+
         public TiposEscuela TipoEscuela { get; set; }
 
         public List<Curso> Cursos { get; set; }
